@@ -7,7 +7,7 @@ x <- "Raquel"
 df <- get_freq_nome(x)
 
 df %>% 
-  ggplot(aes(x = decada, y = freq) + 
+  ggplot(aes(x = decada, y = freq))+ 
   geom_point() + 
   geom_line(aes(group = 1)) +
   labs(title = paste("Nascimentos por década", x, sep = " - ")) +
